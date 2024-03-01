@@ -10,7 +10,16 @@ window
   .then((response) => response.json()) //* procesar la respuesta y convertirla en JSON
 
   .then((responseJson) => {
+    //* obtener Json -> Data -> Renderizar info en el Browser
     responseJson.data.forEach((item) => {
-      console.log(item.name);
-    }); //* obtener Json -> Data -> Renderizar info en el Browser
+      //crear imagen, titulo y precio
+      const image = document.createElement("img");
+      document.body.appendChild(image);
+
+      const title = document.createElement("h2");
+      document.body.appendChild(title);
+
+      const price = document.createElement("span");
+      document.body.appendChild(price);
+    });
   });
