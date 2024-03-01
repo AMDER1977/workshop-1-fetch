@@ -53,11 +53,13 @@ window
 
       // Metemos todo dentro de una tarjeta contenedora
       const card = document.createElement("div");
-      card.className = "md:flex bg-white rounded-lg p-6 hover:bg-gray-300";
+      card.className =
+        "bg-indigo-200 rounded-lg p-6 hover:bg-gray-300 shadow-md";
       card.append(imagen, priceAndTitle);
 
       // Metemos todo dentro del contenedor principal
       const contenedor = document.createElement("div");
+
       contenedor.appendChild(card);
 
       todosLosItems.push(contenedor);
