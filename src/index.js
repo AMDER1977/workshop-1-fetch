@@ -5,6 +5,11 @@
 
 const baseUrl = "https://platzi-avo.vercel.app";
 const appNode = document.querySelector("#app");
+appNode.addEventListener("click", (e) => {
+  if (e.target.nodeName === "h2") {
+    window.alert("Comprate unos varios!!!");
+  }
+});
 
 // Intl
 // 1.- Format fechas
