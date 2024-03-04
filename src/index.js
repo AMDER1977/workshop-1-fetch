@@ -6,8 +6,8 @@
 const baseUrl = "https://platzi-avo.vercel.app";
 const appNode = document.querySelector("#app");
 appNode.addEventListener("click", (e) => {
-  if (e.target.nodeName === "h2") {
-    window.alert("Comprate unos varios!!!");
+  if (e.target.nodeName === "H2") {
+    window.alert("Compralo que esta delicioso!!!");
   }
 });
 
