@@ -39,6 +39,9 @@ window
       const title = document.createElement("h2");
       title.className = "text-lg";
       title.textContent = item.name;
+      title.addEventListener("click", () => {
+        window.alert(`seleccionaste : ${item.name}`);
+      });
 
       // Crear precio
       const price = document.createElement("div");
